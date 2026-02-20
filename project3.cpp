@@ -5,8 +5,8 @@ struct prodotto{
 	float prezzo;
 	string categoria;
 	};
-void aggiungi(prodotto p,string p[],int d){	
-	}
+void aggiungi(prodotto p,string p[],int d){
+    }  
 void visualizza(prodotto p[], int d){
 	}
 void cerca(prodotto p[], int d, string p){
@@ -19,6 +19,7 @@ int main () {
 	prodotto p;
 	prodotto supermercato[100];
 	int menu;
+	
 	do{
 	cout<<"menù:"<<endl;
 	cout<<"0=fine programma"<<endl;
