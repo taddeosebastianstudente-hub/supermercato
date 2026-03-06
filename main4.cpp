@@ -32,7 +32,23 @@ void ricerca(prodotto ele[],int d){
 	}
 	}
 	}
-void cancella()
+void cancella(prodotto ele[],int d){
+	string nome;
+	cout<<"inserisci il mnome del prodotto da eliminare: ";
+	getline(cin,nome);
+	for(int i=0;i<d;i++){
+		if(ele[i].nome==nome){
+			for(int j=0;j<d;j++){
+				ele[j]=ele[j+1];
+				}
+				d--;
+				cout<<"prodotto eliminato";
+			}
+			else{
+				cout<<"prodotto non presente";
+			}
+		}
+	}
 int main(){
 prodotto  p;
 prodotto elenco[100];
@@ -61,6 +77,9 @@ switch(scelta){
 		break;	
 	case 3:
 		ricerca(elenco,n);
+		break;
+	case 4:
+		cancella(elenco,n);
 		break;
 }
 }
